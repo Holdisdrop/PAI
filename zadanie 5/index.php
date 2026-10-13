@@ -28,21 +28,28 @@
     // foreach($owoce as $klucz => $wartosc){
     //     echo "Klucz:".$klucz." Wartość:".$wartosc;
     // };  
-    $array = [1,2,3];
-    $assoc_table = ['imie'=>"Ania","wiek"=>390];
-    $empty_array=[];
-    $array2 = array(1,2,3);
-    $arrayOfNumbers = [1,2,3];
-    for($i=0;$i < count($arrayOfNumbers);$i++){
-        echo $arrayOfNumbers[$i];
-    }
+    // $array = [1,2,3];
+    // $assoc_table = ['imie'=>"Ania","wiek"=>390];
+    // $empty_array=[];
+    // $array2 = array(1,2,3);
+    // $arrayOfNumbers = [1,2,3];
+    // for($i=0;$i < count($arrayOfNumbers);$i++){
+    //     echo $arrayOfNumbers[$i];
+    // }
 
-    $number = 10;
-    $insertArray = [1,2,3];
+    // $number = 10;
+    // $insertArray = [1,2,3];
 
-    for($i=0; $i<count($insertArray);$i++){
-        $insertArray[$i]=$number;
-    }
-    echo "<br>";
-    echo var_dump($insertArray);
+    // for($i=0; $i<count($insertArray);$i++){
+    //     $insertArray[$i]=$number;
+    // }
+    // echo "<br>";
+    // echo var_dump($insertArray);
+
+
+    // $number = 10;
+    // $index = 0;
+    // $insertArray = [1,2,3];
+
+    // $insertArray[$index]=$number
 ?>
