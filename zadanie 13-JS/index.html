@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hello">Witaj my friend</h1>
+    <button id="send">Wyslij</button>
+    <hr>
+
+    <form action="">
+        <label for="price">Cena</label>
+        <input type="number" id="price" name="price"><br>
+
+        <label for="amount">Iloc</label>
+        <input type="number" id="amount" name="amount"><br>
+
+        <button id="calculate" onclick="obliczenie()" type="button">Oblicz</button>
+
+        <p id="result"></p>
+    </form>
+    <hr>
+    <form action="">
+        <label for="dlugosc">dlugosc</label>
+        <input type="number" id="dlugosc" name="dlugosc"><br>
+
+        <label for="szerokosc">szerokosc</label>
+        <input type="number" id="szerokosc" name="szerokosc"><br>
+
+        <label for="plytka">plytka</label>
+        <input type="number" id="plytka" name="plytka"><br>
+
+        <button id="calculate" onclick="oblicz()" type="button">Oblicz</button>
+
+        <p id="result"></p>
+    </form>
+    <script>
+        // let b = document.getElementById("send")
+        // b.addEventListener("click",()=>{
+        //     let h=document.getElementById("hello")
+        //     h.textContent="Udalo sie"
+        // })
+
+        // function obliczenie(){
+        //     let a = document.getElementById("price").value
+        //     let b = document.getElementById("amount").value
+        //     let c = a*b
+        //     let p = document.getElementById("result")
+        //     p.textContent=`Cena to: ${c}zl`
+        //     // PreventDefault()
+
+        // }
+
+        function oblicz(){
+            let a = document.getElementById("dlugosc").value
+            let b = document.getElementById("szerokosc").value
+            let c = document.getElementById("plytka").value
+            let d = (a*b)/c
+            console.log(d);
+            
+        }
+       
+    </script>
+</body>
+</html>
