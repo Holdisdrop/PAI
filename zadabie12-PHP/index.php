@@ -24,25 +24,20 @@
 </html>
 
 <?php
-    $i=1;
+    
     // $login=$_POST["login"];
     // if(strlen($login)<=3&&!empty($_POST["login"])){
     //     echo"nigga";
     // }else{
     //     echo"nigga2";
     // }
-    if (
-        isset($_POST["login"], $_POST["password"], $_POST["age"])
-        && !empty(($_POST["login"]))
-        && strlen($_POST["login"]) >= 3
-        && strlen($_POST["password"]) >= 8
-        && strlen($_POST["age"])
-        && $_POST["age"] >= 18
-        && $_POST["age"] <= 100
-        && isset($_POST["regulamin"])
-    ) {
-        echo "Rejestracja poprawna!";
-    } else {
-        echo "Jest błąd!";
+    // if (isset($_POST["login"]&& $_POST["password"]&&$_POST["age"])&& !empty(($_POST["login"]))&& strlen($_POST["login"]) >= 3&& strlen($_POST["password"]) >= 8&& strlen($_POST["age"])&& $_POST["age"] >= 18&& $_POST["age"] <= 100&& isset($_POST["regulamin"])
+    // ) {
+    //     echo "Rejestracja poprawna!";
+    // } else {
+    //     echo "Jest błąd!";
+    // }
+    for($i=1;$i<=7;$i+=3){
+        print($i);
     }
 ?>

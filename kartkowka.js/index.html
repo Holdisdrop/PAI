@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./" name="ObliczaniePola/Obwodu">
+        <label for="" name="BokA">Bok a</label>
+        <input type="number" id="BokA" name="BokA"><br>
+        <label for="" name="BokB">Bok b</label>
+        <input type="number" id="BokB" name="BokB"><br>
+        <select name="select" id="select">
+            <option value="Pole" name="option">Pole</option>
+            <option value="Obwod" name="option">Obwod</option>
+        </select><br>
+        <button type="submit" id="button" name="button" onclick="pole()">Oblicz</button><br>
+        <div id="wynik"></div>
+    </form>
+    <script>
+        function pole(){
+            let BokA=document.getElementById("BokA").value
+            let BokB=document.getElementById("BokB").value
+            let select=document.getElementById("select").value
+            let divWynik=document.getElementById("wynik")
+            if(BokA>0&&BokB>0){
+                if(select=="Pole"){
+                    let Wynik=BokA*BokB
+                    divWynik.style.color="blue"
+                    divWynik.style.fontSize="20px"
+                    divWynik.textContent=`Wynik: ${Wynik}`
+                    event.preventDefault()
+                }else if(select=="Obwod"){
+                    let Wynik=2*BokA+2*BokB
+                    divWynik.style.color="blue"
+                    divWynik.style.fontSize="20px"
+                    divWynik.textContent=`Wynik: ${Wynik}`
+                    event.preventDefault()
+                    
+                }
+            }else{
+                divWynik.style.color="red"
+                divWynik.innerHTML=`Błędne dane`
+                event.preventDefault()
+            }
+            
+        }
+    </script>
+</body>
+</html>
