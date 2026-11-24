@@ -7,31 +7,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        nav{
-            display: flex;
-            gap: 20px;
-            background: #333;
-            padding: 15px;
-        }
-
-        nav a{
-            color: white;
-            text-decoration: none;
-        }
-
-        nav a:hover{
-            color: #00aaff;
-        }
-
-        nav a.active{
-            color: #00aaff;
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     INDEX
+    <p>zxvfhse4ulwylo8e4hgw43logweo;rghq3lo54gii3ryq9igrghqw34loughq34ghlkuqwg3i;uhghuli opis</p>
     <?php
         include "nav.php";
     ?>

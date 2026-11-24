@@ -23,7 +23,7 @@
             $sql="DELETE FROM `gry` WHERE `id`='$id'";
             $result=mysqli_query($conn,$sql);
             if($result){
-            echo "Gra o".$id." zostala usunieta";
+            echo "Gra o ".$id." zostala usunieta";
             }else{
                 echo "ERROR".mysqli_error($conn);
             }

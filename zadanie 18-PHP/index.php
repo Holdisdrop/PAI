@@ -12,7 +12,25 @@
     }
 
     echo "Polaczenie sie powiodlo";
+    // $localhost="localhost";
+    // $username = "root";
+    // $password="";
+    // $database="warehouse";
+
+    // //tworzenie polaczenia
+    // $conn = new mysqli($localhost,$username,$password,$database)
+
+    // if($conn->connect_error){
+    //     die("Polaczenie nie powiedlo sie;". $conn->connect_error);
+    // }
+    // // if(!$conn){
+    //     die("Polaczenie nie powiedlo sie;");
+    // }
+    // echo "Polaczenie sie powiedo"
 ?>
+    
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

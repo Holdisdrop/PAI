@@ -1,0 +1,82 @@
+.container {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-areas:
+        "header header header"
+        "nav section aside"
+        "footer footer footer";
+}
+
+.header1 {
+    grid-area: header;
+    height: 150px;
+    background-color: red;
+}
+
+nav {
+    grid-area: nav;
+    height: 270px;
+    background-color: rgb(47, 0, 255);
+}
+
+section {
+    display: grid;
+    padding-top: 15px;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-areas: 
+    "j d t"
+    "c p s";
+    gap: 20px;
+    grid-area: section;
+    height: 255px;
+    background-color: rgb(0, 0, 0);
+}
+
+aside {
+    grid-area: aside;
+    height: 270px;
+    background-color: rgb(102, 255, 0);
+}
+
+.footer1 {
+    grid-area: footer;
+    height: 150px;
+    background-color: rgb(253, 135, 0);
+}
+
+.j{
+    grid-area: j;
+    height: 25px;
+    background-color: rgb(253, 135, 0);
+}
+
+.d{
+    grid-area: d;
+    height: 25px;
+    background-color: rgb(253, 135, 0);
+}
+
+.t{
+    grid-area: t;
+    height: 25px;
+    background-color: rgb(253, 135, 0);
+}
+
+.c{
+    grid-area: c;
+    height: 25px;
+    background-color: rgb(253, 135, 0);
+}
+
+.p{
+    grid-area: p;
+    height: 25px;
+    background-color: rgb(253, 135, 0);
+}
+
+.s{
+    grid-area: s;
+    height: 25px;
+    background-color: rgb(253, 135, 0);
+}
+

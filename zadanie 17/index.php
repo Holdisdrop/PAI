@@ -15,13 +15,10 @@
     <form action="" method="POST">
         <label for="name">Nazwa produktu</label>
         <input type="text" name="name" id="name" required><br>
-
         <label for="price">Cena produktu</label>
         <input type="number" name="price" id="price" step="0.01" min="0" required><br>
-
         <label for="amount">Liczba sztuk</label>
         <input type="number" name="amount" id="amount" min="1" required><br>
-
         <input type="submit" value="Wyslij">
     </form>
 
